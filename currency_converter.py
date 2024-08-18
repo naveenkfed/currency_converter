@@ -4,17 +4,9 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter.filedialog import askopenfilename
 
-'''
-CURRENCIES = (
-    'INR - Indian Rupees',
-    'USD - US Dollars',
-    'EUR - Euros',
-    'GBP - British Pounds',
-    'JPY - Japanese Yen',
-    'DIR - Dirhams')
-'''
 
 def valid_input(value):
+    """  Validate given input is neither null nor negative """
     if not value:
         raise ValueError('Amount cannot be empty.')
     
